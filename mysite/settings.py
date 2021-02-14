@@ -29,7 +29,7 @@ SECRET_KEY = '=$!n&_x)%l+7c$=1acy(lcu)e$&-_m9uyc09!6!@^ad88*nok('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ide-a6b348acd08443298a55d3ed539927be-8080.cs50.xyz']
+ALLOWED_HOSTS = ['.cs50.ws']
 
 
 # Application definition
