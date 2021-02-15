@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from django.contrib.auth.models impost User
+from django.contrib.auth.models import User
 
 # Post model
 
@@ -9,7 +9,7 @@ class Post(models.Model):
         ('draft', 'Draft'),
         ('published', 'Published'),
     )
-    title = models.CharField(mex_length=250)
+    title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250, unique_for_date='publish')
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_posts')
     body = models.TextField()
@@ -21,5 +21,5 @@ class Post(models.Model):
 class Meta:
     ordering = ('-publish',)
 
-def __str__(str):
+def __str__(self):
     return self.title
