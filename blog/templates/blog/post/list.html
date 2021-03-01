@@ -10,9 +10,9 @@
                 {{ post.title }}
             </a>
         </h2>
-        <p2 class="date">
-            Published {{ post.published }} by {{ post.author }}
-        </p2>
+        <p class="date">
+            Published {{ post.publish }} by {{ post.author }}
+        </p>
         {{ post.body|truncatewords:30|linebreaks }}
     {% endfor %}
 {% endblock %}
